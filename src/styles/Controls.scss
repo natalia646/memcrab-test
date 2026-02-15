@@ -1,7 +1,6 @@
 .matrix-generator {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1rem;
+  display: flex;
+  gap: 2rem;
 
   &__fields {
     display: flex;
@@ -12,6 +11,7 @@
   &__actions {
     display: flex;
     flex-direction: column;
+    margin: auto 0;
     gap: 0.5rem;
   }
 }

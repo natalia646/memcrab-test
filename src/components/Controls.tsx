@@ -1,7 +1,7 @@
 import { useMatrixContext } from "../hooks/useMatrixContext";
 import { Input } from "./Input";
 
-import '../styles/Controls.scss'
+import "../styles/Controls.scss";
 
 export const Controls = () => {
   const {
@@ -16,16 +16,19 @@ export const Controls = () => {
     <section className="matrix-generator">
       <div className="matrix-generator__fields">
         <Input
+          label="Enter rowa amount: "
           placeholder="rows"
           value={rows || ""}
           onChange={(e) => changeInputValue(e, "rows", 100)}
         />
         <Input
+          label="Enter columns amount: "
           placeholder="colums"
           value={columns || ""}
           onChange={(e) => changeInputValue(e, "columns", 100)}
         />
         <Input
+          label="Enter the number of highlighted cells: "
           placeholder="x"
           value={nearestValue || ""}
           onChange={(e) => changeInputValue(e, "nearestValue", rows * columns)}
