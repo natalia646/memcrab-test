@@ -6,7 +6,6 @@ import { HighlightProvider } from "./context/HighlightProvider";
 import "./App.css";
 
 
-
 function App() {
   return (
     <MatrixProvider>
@@ -14,7 +13,6 @@ function App() {
         <Controls />
         <MatrixTable />
       </HighlightProvider>
-
     </MatrixProvider>
   );
 }
