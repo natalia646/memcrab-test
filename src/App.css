@@ -1,6 +1,7 @@
 
 .add-row{
   cursor: pointer;
+  display: block;
 }
 td{
   border: 1px solid rgb(0, 0, 0);

@@ -15,7 +15,7 @@ export const Controls = () => {
             <Input
                 placeholder="colums"
                 value={columns || ""}
-                onChange={(e) => changeInputValue(e, 'colums', 100)}
+                onChange={(e) => changeInputValue(e, 'columns', 100)}
 
             />
             <Input
@@ -28,13 +28,13 @@ export const Controls = () => {
                 Generate matrix
             </button>
 
-            <div>
-                {!!matrix.length && (
-                    <button className="add-row" onClick={addRow}>
-                        + Add row
-                    </button>
-                )}
-            </div>
+
+            {!!matrix.length && (
+                <button className="add-row" onClick={addRow}>
+                    + Add row
+                </button>
+            )}
+
         </>
     )
 }
