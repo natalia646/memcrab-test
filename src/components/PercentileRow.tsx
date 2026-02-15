@@ -10,6 +10,7 @@ export const PercentileRow = () => {
 
   return (
     <tr>
+      <th>60th percentile</th>
       {percentileRow.map((cell) => (
         <td key={cell}>{cell.toFixed(1)}</td>
       ))}

@@ -14,9 +14,19 @@ export const MatrixTable = () => {
     <section className="matrix">
       {!!matrix.length && (
         <table>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              {Array.from({ length: matrix[0].cells.length }, (_, i) => (
+                <th scope="col"> {i + 1}</th>
+              ))}
+              <th>Sum values</th>
+            </tr>
+          </thead>
           <tbody>
-            {matrix.map(({ cells, id }) => (
+            {matrix.map(({ cells, id }, j) => (
               <tr>
+                <th key={id}> {j + 1}</th>
                 {(percentedRowId === id
                   ? calculateRowPercent(cells)
                   : cells
@@ -29,7 +39,9 @@ export const MatrixTable = () => {
                   onMouseLeave={() => setPercentedRowId(null)}>
                   {calculateRowSum(cells)}
                 </td>
-                <td className="remove-button" onClick={() => removeRow(id)}>- Remove row</td>
+                <td className="remove-button" onClick={() => removeRow(id)}>
+                  - Remove row
+                </td>
               </tr>
             ))}
             <PercentileRow />
