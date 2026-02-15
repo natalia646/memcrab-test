@@ -1,0 +1,16 @@
+.matrix {
+  margin-top: 2rem;
+}
+
+.hovered-sum {
+  color: red;
+  font-weight: 600;
+}
+
+.remove-button {
+  color: rgb(107, 96, 96);
+
+  &:hover {
+    color: black;
+  }
+}

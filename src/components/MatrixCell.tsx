@@ -4,6 +4,7 @@ import { useMatrixContext } from "../hooks/useMatrixContext";
 import cn from "classnames";
 import { highlightNearestValues } from "../utils/highlightNearestValues";
 import { useHighlightContext } from "../hooks/useHighlightContext";
+import '../styles/MatrixCell.scss'
 
 type MatrixCellProps = {
   cell: CellWithPersent;

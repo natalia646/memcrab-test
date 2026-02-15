@@ -2,9 +2,7 @@ import { Controls } from "./components/Controls";
 import { MatrixTable } from "./components/MatrixTable";
 import { MatrixProvider } from "./context/MatrixProvider";
 import { HighlightProvider } from "./context/HighlightProvider";
-
-import "./App.css";
-
+import './styles/MatrixTable.scss'
 
 function App() {
   return (
