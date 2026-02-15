@@ -1,12 +1,10 @@
-import { createContext, type ChangeEvent } from "react";
+import { createContext, type ChangeEvent, type Dispatch, type SetStateAction } from "react";
 import type { InputValues, Row } from "../types/Cell.type";
 
 
 export type MatrixContextType = {
     inputValues: InputValues;
     matrix: Row[];
-    highlightedIds: number[];
-    percentedRowId: number | null;
 
     changeInputValue: (event: ChangeEvent<HTMLInputElement, HTMLInputElement>, field: string, maxValue: number) => void,
     generateMatrix: () => void

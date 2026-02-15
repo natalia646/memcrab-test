@@ -15,10 +15,8 @@ const initInputValues = {
 export const MatrixProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const [inputValues, setInputValues] = useState(initInputValues);
     const [matrix, setMatrix] = useState<Row[]>([]);
-    const [highlightedIds, setHighlightedIds] = useState<number[]>([]);
-    const [percentedRowId, setPercentedRowId] = useState<number | null>(null);
 
-    const { rows, columns, nearestValue } = inputValues
+    const { rows, columns } = inputValues;
 
     const changeInputValue = (event: ChangeEvent<HTMLInputElement, HTMLInputElement>, field: string, maxValue: number) => {
         const value = +event.target.value;
@@ -84,14 +82,11 @@ export const MatrixProvider: FC<{ children: ReactNode }> = ({ children }) => {
             value={{
                 inputValues,
                 matrix,
-                highlightedIds,
-                percentedRowId,
                 changeInputValue,
                 generateMatrix,
                 addRow,
-                removeRow, 
-                incrementCell
-
+                removeRow,
+                incrementCell,
             }}>
             {children}
         </MatrixContext.Provider>
