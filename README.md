@@ -26,7 +26,6 @@
 - **SCSS**
 
 ---
-<img width="500" height="593" alt="image" src="https://github.com/user-attachments/assets/35a854f9-a80e-4e6d-8906-06878bf62854" />
 <img width="500" height="589" alt="image" src="https://github.com/user-attachments/assets/1dce3bf0-6940-4bda-b0ef-fd35fbe05066" />
 <img width="500" height="583" alt="image" src="https://github.com/user-attachments/assets/56d72ca6-df06-4c30-bcdd-20e3c1d027ba" />
 
@@ -60,3 +59,4 @@ npm run dev
 After running, open:
 
 http://localhost:5173
+
