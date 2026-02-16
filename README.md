@@ -1,4 +1,4 @@
-# Matrix Test Task
+# [Matrix Test Task](https://natalia646.github.io/memcrab-test/)
 
 ## ✨ Features
 
@@ -38,12 +38,12 @@
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/natalia646/memcrab-test.git
 ```
 
 ### 2️⃣ Navigate to project folder
 ```bash
-cd <project-folder>
+cd memcrab-test
 ```
 
 ### 3️⃣ Install dependencies
@@ -59,4 +59,6 @@ npm run dev
 After running, open:
 
 http://localhost:5173
+
+
 
