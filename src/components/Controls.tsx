@@ -16,7 +16,7 @@ export const Controls = () => {
     <section className="matrix-generator">
       <div className="matrix-generator__fields">
         <Input
-          label="Enter rowa amount: "
+          label="Enter rows amount: "
           placeholder="rows"
           value={rows || ""}
           onChange={(e) => changeInputValue(e, "rows", 100)}
